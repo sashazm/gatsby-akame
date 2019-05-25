@@ -3,7 +3,38 @@ module.exports = {
     title: `Akame`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    menuLinks:[
+      {
+        name: `Home`,
+        link: `/`
+      },
+      {
+        name: `Pages`,
+        link: `/page-2`
+      },
+      {
+        name: `Portfolio`,
+        link: `#`
+      },
+      {
+        name: `Services`,
+        link: `#`
+      },
+      {
+        name: `About Us`,
+        link: `#`
+      },
+      {
+        name: `Blog`,
+        link: `page-3`
+      },
+      {
+        name: `Contact`,
+        link: `#`
+      }
+    ],
   },
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

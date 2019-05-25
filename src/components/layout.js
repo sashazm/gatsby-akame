@@ -22,17 +22,23 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            menuLinks {
+              name
+              link
+            }
           }
         }
       }
     `}
-    render={data => (
+    render={data => {
+      const {title, menuLinks}= data.site.siteMetadata
+      return (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={title} menuLinks={menuLinks} />
         <main>{children}</main>test
         <Footer />
       </>
-    )}
+    )}}
   />
 )
 
