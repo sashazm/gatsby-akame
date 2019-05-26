@@ -25,9 +25,11 @@ class HeaderMain extends React.Component {
   }
 
   render() {
+    // create a css class if the menu state is true
     const classMainActive = this.state.showMenu
       ? "header-main__nav--active"
       : ""
+    // create a css class for the hamburger button if the menu state is true
     const classToggleActive = this.state.showMenu ? "nav-toggle--active" : ""
 
     return (

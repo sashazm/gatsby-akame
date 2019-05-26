@@ -31,14 +31,15 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => {
-      const {title, menuLinks}= data.site.siteMetadata
+      const { title, menuLinks } = data.site.siteMetadata
       return (
-      <>
-        <Header siteTitle={title} menuLinks={menuLinks} />
-        <main>{children}</main>test
-        <Footer />
-      </>
-    )}}
+        <>
+          <Header siteTitle={title} menuLinks={menuLinks} />
+          <main>{children}</main>
+          <Footer />
+        </>
+      )
+    }}
   />
 )
 
