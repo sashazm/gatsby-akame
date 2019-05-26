@@ -5,11 +5,13 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import WelcomeBanner from "../components/welcome-banner"
+import AboutUs from "../components/about-us"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <WelcomeBanner />
+    <AboutUs />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
