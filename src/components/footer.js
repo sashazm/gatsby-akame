@@ -1,26 +1,29 @@
 import React from "react"
 import logo from "../images/logo.png"
 
-
 const Footer = () => (
   <footer>
-    <div class="l-container l-vertical-space footer">
+    <div className="l-container l-vertical-space footer">
       {/* <!-- Single Footer Widget --> */}
-      <section class="footer__copyright">
+      <section className="footer__copyright">
         {/* <!-- Footer Logo --> */}
-        <a href="/"><img src={logo} alt="" class="copyright__logo"/></a>
+        <a href="/">
+          <img src={logo} alt="" className="copyright__logo" />
+        </a>
 
-        <p>We would love to serve you and let you enjoy your salon experience. Excepteur sint occaecat cupidatat non
-          proident.</p>
+        <p>
+          We would love to serve you and let you enjoy your salon experience.
+          Excepteur sint occaecat cupidatat non proident.
+        </p>
 
         {/* <!-- Copyright Text --> */}
         <p>Copyright &copy; {new Date().getFullYear()} All rights reserved</p>
       </section>
 
       {/* <!-- Single Footer Widget --> */}
-      <section class="footer__opening-times">
+      <section className="footer__opening-times">
         {/* <!-- Widget Title --> */}
-        <h3 class="footer__title">Opening Times</h3>
+        <h3 className="footer__title">Opening Times</h3>
 
         {/* <!-- Open Times --> */}
         <div>
@@ -29,18 +32,26 @@ const Footer = () => (
         </div>
 
         {/* <!-- Social Info --> */}
-        <div class="social-media">
-          <a href="#" class="social-icon social-icon--facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon social-icon--twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon social-icon--google-plus"><i class="fab fa-google-plus-g"></i></a>
-          <a href="#" class="social-icon social-icon--instagram"><i class="fab fa-instagram"></i></a>
+        <div className="social-media">
+          <a href="#" className="social-icon social-icon--facebook">
+            <i className="fab fa-facebook-f" />
+          </a>
+          <a href="#" className="social-icon social-icon--twitter">
+            <i className="fab fa-twitter" />
+          </a>
+          <a href="#" className="social-icon social-icon--google-plus">
+            <i className="fab fa-google-plus-g" />
+          </a>
+          <a href="#" className="social-icon social-icon--instagram">
+            <i className="fab fa-instagram" />
+          </a>
         </div>
       </section>
 
       {/* <!-- Single Footer Widget --> */}
-      <section class="footer__contact">
+      <section className="footer__contact">
         {/* <!-- Widget Title --> */}
-        <h3 class="footer__title">Contact Us</h3>
+        <h3 className="footer__title">Contact Us</h3>
 
         {/* <!-- Contact Address --> */}
         <div>

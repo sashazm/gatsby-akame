@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 
 const MenuMain = ({ menuLinks }) => (
   <ul className="menu menu--main menu--push">
-    {menuLinks.map(link => (
-      <li key={link.link}>
+    {menuLinks.map((link, index) => (
+      <li key={index}>
         <Link
           to={link.link}
           className="menu__link"
