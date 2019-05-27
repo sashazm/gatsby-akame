@@ -6,6 +6,7 @@ import WelcomeBanner from "../components/welcome-banner"
 import AboutUs from "../components/about-us"
 import OurServices from "../components/our-services"
 import WhyChoose from "../components/why-choose"
+import Portfolio from "../components/portfolio"
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <div class="l-container section__border" />
     <OurServices />
     <WhyChoose />
+    <Portfolio />
   </Layout>
 )
 
