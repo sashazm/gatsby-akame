@@ -1,5 +1,11 @@
 import React from "react"
 import logo from "../images/logo.png"
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaGooglePlusG,
+  FaInstagram,
+} from "react-icons/fa"
 
 const Footer = () => (
   <footer>
@@ -34,16 +40,16 @@ const Footer = () => (
         {/* <!-- Social Info --> */}
         <div className="social-media">
           <a href="#" className="social-icon social-icon--facebook">
-            <i className="fab fa-facebook-f" />
+            <FaFacebookF />
           </a>
           <a href="#" className="social-icon social-icon--twitter">
-            <i className="fab fa-twitter" />
+            <FaTwitter />
           </a>
           <a href="#" className="social-icon social-icon--google-plus">
-            <i className="fab fa-google-plus-g" />
+            <FaGooglePlusG />
           </a>
           <a href="#" className="social-icon social-icon--instagram">
-            <i className="fab fa-instagram" />
+            <FaInstagram className="fab fa-instagram" />
           </a>
         </div>
       </section>

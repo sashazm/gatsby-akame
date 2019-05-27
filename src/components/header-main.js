@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import logo from "../images/logo.png"
+import { FaShoppingCart } from "react-icons/fa"
 import MenuMain from "./menu"
 
 class HeaderMain extends React.Component {
@@ -62,7 +63,7 @@ class HeaderMain extends React.Component {
             <MenuMain menuLinks={this.props.menuLinks} />
             {/* <!-- Cart Icon --> */}
             <a href="#" className="header-main__cart">
-              <i className="fas fa-shopping-cart" />
+              <FaShoppingCart className="fas fa-shopping-cart" />
             </a>
 
             {/* <!-- Book Link --> */}
