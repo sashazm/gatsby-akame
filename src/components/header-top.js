@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { FaPhone } from "react-icons/fa"
+import { FaPhone, FaClock } from "react-icons/fa"
 
 const HeaderTop = ({ siteTitle }) => (
   <section className="header-top">
@@ -8,11 +8,11 @@ const HeaderTop = ({ siteTitle }) => (
       <p className="header-top__greeting">Welcome to {siteTitle} hair salon!</p>
       <div className="header-top__info">
         <p className="header-top__time">
-          <faPhone /> Mon-Sat: 8.00 to 17.00
+          <FaClock /> Mon-Sat: 8.00 to 17.00
         </p>
         <p className="header-top__phone-number">
           <span className="header-top__pipe">|</span>
-          <i className="fas fa-phone fa-rotate-90" /> Call us: (+12)-345-6789
+          <FaPhone className="flip-h" /> Call us: (+12)-345-6789
         </p>
       </div>
     </div>
