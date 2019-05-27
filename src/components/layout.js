@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -34,6 +35,16 @@ const Layout = ({ children }) => (
       const { title, menuLinks } = data.site.siteMetadata
       return (
         <>
+          <Helmet>
+            <link
+              href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,700"
+              rel="stylesheet"
+            />
+            <link
+              href="https://fonts.googleapis.com/css?family=Open+Sans"
+              rel="stylesheet"
+            />
+          </Helmet>
           <Header siteTitle={title} menuLinks={menuLinks} />
           <main>{children}</main>
           <Footer />
