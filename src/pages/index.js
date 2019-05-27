@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import WelcomeBanner from "../components/welcome-banner"
 import AboutUs from "../components/about-us"
 import OurServices from "../components/our-services"
+import WhyChoose from "../components/why-choose"
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <AboutUs />
     <div class="l-container section__border" />
     <OurServices />
+    <WhyChoose />
   </Layout>
 )
 

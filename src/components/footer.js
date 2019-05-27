@@ -49,7 +49,7 @@ const Footer = () => (
             <FaGooglePlusG />
           </a>
           <a href="#" className="social-icon social-icon--instagram">
-            <FaInstagram className="fab fa-instagram" />
+            <FaInstagram />
           </a>
         </div>
       </section>
