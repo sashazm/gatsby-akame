@@ -46,9 +46,9 @@ const images = [
 
 const Portfolio = () => (
   <section>
-    <div class="l-container l-vertical-space">
+    <div className="l-container l-vertical-space">
       <header>
-        <div class="u-centered">
+        <div className="u-centered">
           <h1>Our Work</h1>
           <p>
             Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -66,7 +66,7 @@ const Portfolio = () => (
         </ul>
       </nav>
 
-      <div class="portfolio">
+      <div className="portfolio">
         {images.map((image, index) => (
           <article
             key={index}
@@ -81,8 +81,8 @@ const Portfolio = () => (
           </article>
         ))}
       </div>
-      <footer class="button--centered">
-        <a href="#" class="button">
+      <footer className="button--centered">
+        <a href="#" className="button">
           View All Work
         </a>
       </footer>

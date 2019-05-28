@@ -31,9 +31,9 @@ const servicesArr = [
 
 const OurServices = () => (
   <section>
-    <div class="l-container">
+    <div className="l-container">
       <header>
-        <div class="l-vertical-space u-centered">
+        <div className="l-vertical-space u-centered">
           <h1>Our Services</h1>
           <p>
             The House of Hair Salon &amp; Spa, incididunt ut labore et dolore
@@ -42,7 +42,7 @@ const OurServices = () => (
         </div>
       </header>
 
-      <div class="services">
+      <div className="services">
         {servicesArr.map(function(service, index) {
           return <Service key={index} {...service} />
         })}

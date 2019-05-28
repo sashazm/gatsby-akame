@@ -26,7 +26,7 @@ module.exports = {
       },
       {
         name: `Blog`,
-        link: `page-3`,
+        link: `/blog`,
       },
       {
         name: `Contact`,
@@ -38,10 +38,30 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/pages/posts`,
       },
     },
     `gatsby-transformer-sharp`,
