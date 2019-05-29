@@ -602,7 +602,7 @@ blockquote {
   z-index: 3;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -110%;
   height: 100vh;
   display: grid;
   grid-auto-rows: -webkit-min-content;
@@ -1041,6 +1041,39 @@ blockquote {
 
 .nav-toggle--mobile {
   margin: 1rem;
+}
+
+.blog-nav-prev {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .blog-nav-prev {
+    display: flex;
+    width: 25vw;
+  }
+}
+
+.blog-nav-next {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .blog-nav-next {
+    display: flex;
+    width: 25vw;
+  }
+}
+
+.blog-nav--mobile {
+  display: flex;
+  font-size: 1.2em;
+}
+
+@media (min-width: 600px) {
+  .blog-nav--mobile {
+    display: none;
+  }
 }
 
 .experts {
