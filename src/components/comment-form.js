@@ -112,14 +112,21 @@ class CommentForm extends React.Component {
             Post Comment
           </button>
         </form>
-        {this.state.list.reverse().map((item, index) => (
-          <Comment
-            key={index}
-            author={item.author}
-            text={item.text}
-            email={item.email}
-          />
-        ))}
+
+        <section>
+          <h2 className="comment-form__title comment-form__title--alt">
+            Read comments:
+          </h2>
+
+          {this.state.list.reverse().map((item, index) => (
+            <Comment
+              key={index}
+              author={item.author}
+              text={item.text}
+              email={item.email}
+            />
+          ))}
+        </section>
       </aside>
     )
   }

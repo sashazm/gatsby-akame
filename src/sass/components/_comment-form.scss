@@ -5,7 +5,6 @@
 
   @include breakpoint($bp-small) {
     padding: 2rem;
-
   }
 
   @include breakpoint($bp-medium) {
@@ -19,11 +18,15 @@
     @include breakpoint($bp-small) {
       font-size: 2rem;
     }
+
+    &--alt {
+      margin-top: 6rem;
+    }
   }
 
   &__button {
     margin-top: 1rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
 
     @include breakpoint($bp-small) {
       font-size: 1rem;
@@ -36,5 +39,25 @@
 
   &--tall {
     height: 8rem;
+  }
+}
+
+// stile for the comment output
+.comment-box {
+  @include form-field;
+  margin: 2rem auto;
+
+  &-info {
+    @include breakpoint($bp-small) {
+      display: flex;
+      flex-direction: column;
+      background-color: $light-blue;
+      // justify-content: space-around;
+    }
+  }
+
+  &-text {
+    text-align: left;
+    // background-color: $light-blue;
   }
 }
