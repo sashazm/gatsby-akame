@@ -1,3 +1,5 @@
+const globImporter = require("node-sass-glob-importer")
+
 module.exports = {
   siteMetadata: {
     title: `Akame`,
@@ -37,6 +39,12 @@ module.exports = {
 
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        importer: globImporter(),
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

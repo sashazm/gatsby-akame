@@ -4,6 +4,7 @@ import Comment from "./comment"
 class CommentForm extends React.Component {
   constructor(props) {
     super(props)
+    // set the initial state
     this.state = {
       text: "",
       author: "",

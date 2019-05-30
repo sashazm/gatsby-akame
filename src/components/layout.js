@@ -13,8 +13,8 @@ import { Helmet } from "react-helmet"
 import Header from "./header"
 import Footer from "./footer"
 // import "./layout.css"
-import "./normalize.css"
-import "./styles.css"
+import "../sass/normalize.scss"
+import "../sass/styles.scss"
 
 const Layout = ({ children }) => (
   <StaticQuery
