@@ -41,23 +41,3 @@
     height: 8rem;
   }
 }
-
-// stile for the comment output
-.comment-box {
-  @include form-field;
-  margin: 2rem auto;
-
-  &-info {
-    @include breakpoint($bp-small) {
-      display: flex;
-      flex-direction: column;
-      background-color: $light-blue;
-      // justify-content: space-around;
-    }
-  }
-
-  &-text {
-    text-align: left;
-    // background-color: $light-blue;
-  }
-}
