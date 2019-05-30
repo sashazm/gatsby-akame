@@ -56,11 +56,14 @@ class CommentForm extends React.Component {
     this.addToList(text, author, email)
     // reset form to display empty fields
     this.setState({ text: "", author: "", email: "" })
-    this.title = (
+  }
+
+  getTitle() {
+    return this.state.list.length > 0 ? (
       <h2 className="comment-form__title comment-form__title--alt">
         "Read Comments:"
       </h2>
-    )
+    ) : null
   }
 
   render() {
@@ -120,7 +123,8 @@ class CommentForm extends React.Component {
         </form>
 
         <section>
-          {this.title ? this.title : null}
+          {/* Title when we have comments */}
+          {this.getTitle()}
           {this.state.list.reverse().map((item, index) => (
             <Comment
               key={index}
