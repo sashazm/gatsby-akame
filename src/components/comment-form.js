@@ -12,17 +12,19 @@ class CommentForm extends React.Component {
       list: [],
     }
   }
-
-  addToList(text, author, email) {
+  async addToList(text, author, email) {
     const comment = {
       text,
       author,
       email,
     }
 
-    this.setState({
+    await this.setState({
       list: [...this.state.list, comment],
     })
+
+    // update the comment count in the parent component
+    this.setParentCommentCount()
   }
 
   // retrieve input from the message field.
@@ -58,16 +60,20 @@ class CommentForm extends React.Component {
     this.setState({ text: "", author: "", email: "" })
   }
 
+  setParentCommentCount() {
+    let count = this.state.list.length
+    this.props.callbackParentCommentCount(count)
+  }
+
   getTitle() {
     return this.state.list.length > 0 ? (
       <h2 className="comment-form__title comment-form__title--alt">
-        "Read Comments:"
+        Read Comments:
       </h2>
     ) : null
   }
 
   render() {
-    // let title = "No Comments Yet"
     return (
       <aside className="comment-form u-centered ">
         <h2 className="comment-form__title">Leave a comment:</h2>
@@ -125,14 +131,16 @@ class CommentForm extends React.Component {
         <section>
           {/* Title when we have comments */}
           {this.getTitle()}
-          {this.state.list.reverse().map((item, index) => (
-            <Comment
-              key={index}
-              author={item.author}
-              text={item.text}
-              email={item.email}
-            />
-          ))}
+          {this.state.list.reverse().map((item, index) => {
+            return (
+              <Comment
+                key={index}
+                author={item.author}
+                text={item.text}
+                email={item.email}
+              />
+            )
+          })}
         </section>
       </aside>
     )

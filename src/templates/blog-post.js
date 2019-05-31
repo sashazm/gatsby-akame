@@ -16,10 +16,24 @@ import {
 } from "react-icons/fa"
 
 class BlogTemplate extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      commentCount: 0,
+    }
+  }
+
+  // method that receives a total for comment count from the child component
+  // and updates the commentCount state of this component
+  setCommentCount = commentCount => {
+    this.setState({ commentCount })
+  }
+
   render() {
     const post = this.props.data.markdownRemark
     const cover_image = post.frontmatter.cover_image
     const { previous, next } = this.props.pageContext
+
     return (
       <Layout location={this.props.location}>
         <div className="section__border section__border--start" />
@@ -36,7 +50,8 @@ class BlogTemplate extends React.Component {
                     className="article__byline"
                     title="Read the Comments"
                   >
-                    <span className="blogpost__pipe">|</span> <FaComments /> 10
+                    <span className="blogpost__pipe">|</span> <FaComments />{" "}
+                    {this.state.commentCount}
                   </a>
                 </div>
                 <h1 className="article__title-text">
@@ -104,7 +119,9 @@ class BlogTemplate extends React.Component {
                     </div>
                   </footer>
 
-                  <CommentForm />
+                  <CommentForm
+                    callbackParentCommentCount={this.setCommentCount}
+                  />
 
                   <ul
                     style={{
