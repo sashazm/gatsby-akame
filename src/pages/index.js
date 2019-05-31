@@ -7,6 +7,7 @@ import AboutUs from "../components/about-us"
 import OurServices from "../components/our-services"
 import WhyChoose from "../components/why-choose"
 import Portfolio from "../components/portfolio"
+import CallToAction from "../components/cta"
 
 const IndexPage = () => (
   <Layout>
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <OurServices />
     <WhyChoose />
     <Portfolio />
+    <CallToAction />
   </Layout>
 )
 
