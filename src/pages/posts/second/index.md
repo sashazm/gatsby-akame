@@ -1,7 +1,7 @@
 ---
 path: "/second"
 
-date: "September 27, 2018"
+date: "September 29, 2018"
 
 title: "Finally: How to Make Your Agressively Straight Hair Hold a Curl"
 

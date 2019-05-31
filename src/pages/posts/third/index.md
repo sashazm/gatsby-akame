@@ -1,7 +1,7 @@
 ---
 path: "/third"
 
-date: "September 27, 2018"
+date: "October 27, 2018"
 
 title: "Yes, Emilia Clarke Just Cut Off All Her Hair Into a Tiny Bob"
 
