@@ -9,6 +9,7 @@ import WhyChoose from "../components/why-choose"
 import Portfolio from "../components/portfolio"
 import CallToAction from "../components/cta"
 import LatestBlogPosts from "../components/latest-blogposts"
+import OurExperts from "../components/our-experts"
 
 const IndexPage = () => (
   <Layout>
@@ -19,6 +20,7 @@ const IndexPage = () => (
     <OurServices />
     <WhyChoose />
     <Portfolio />
+    <OurExperts />
     <LatestBlogPosts />
     <CallToAction />
   </Layout>
