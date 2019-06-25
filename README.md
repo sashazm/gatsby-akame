@@ -1,5 +1,5 @@
 <!-- ABOUT AKAME HAIR SALON -->
-This project was created by porting an existing HTML and SCSS files and adapting them for React Components.
+gatsby-akame was created by porting an existing HTML and SCSS files and adapting them for React Components.
 You can find these React Components in src/components folder.
 Project also features blog posts which are located in src/pages.
 
